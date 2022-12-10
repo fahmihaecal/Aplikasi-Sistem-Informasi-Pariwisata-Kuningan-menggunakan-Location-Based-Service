@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_4sdp"
+    tools:context=".fragment.FragmentDesc">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:textSize="@dimen/_12ssp" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_350sdp"
+            android:layout_below="@+id/desc"
+            android:layout_marginTop="6dp" />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".TambahObjekWisata">
+
+        <TextView
+            android:id="@+id/admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:fontFamily="@font/mreguler"
+            android:text="Tambah Objek Wisata"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_admin"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/admin">
+
+
+            <TextView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/mreguler"
+                android:text="Nama Objek Wisata"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp" />
+
+            <EditText
+                android:id="@+id/namaobjek"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/_12sdp"
+                android:paddingRight="@dimen/_12sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/btn_menu" />
+
+
+            <TextView
+                android:id="@+id/alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/mreguler"
+                android:text="Alamat Objek Wisata"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp" />
+
+            <EditText
+                android:id="@+id/alamatobjek"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:paddingLeft="@dimen/_12sdp"
+                android:paddingRight="@dimen/_12sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/btn_menu" />
+
+
+            <TextView
+                android:id="@+id/desk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/mreguler"
+                android:text="Deskripsi"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp" />
+
+            <EditText
+                android:id="@+id/deskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:paddingLeft="@dimen/_12sdp"
+                android:paddingRight="@dimen/_12sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/btn_menu" />
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_190sdp"/>
+
+
+            <TextView
+                android:id="@+id/longla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/mreguler"
+                android:text="Latitude dan Longitude"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/latitude"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/btn_menu"
+                    android:gravity="center"
+                    android:hint="Latitude" />
+
+                <EditText
+                    android:id="@+id/longtitude"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/btn_menu"
+                    android:gravity="center"
+                    android:hint="Longtitude" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/foto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/mreguler"
+                android:text="Foto Objek wisata Maksimal 3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:background="@drawable/btn_menu" />
+
+                <Button
+                    android:id="@+id/btn_img1"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:text="+"
+                    android:fontFamily="@font/mbold"
+                    android:textSize="@dimen/_30sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/btn_menu" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:background="@drawable/btn_menu" />
+
+                <Button
+                    android:id="@+id/btn_img2"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="+"
+                    android:fontFamily="@font/mbold"
+                    android:textSize="@dimen/_30sdp"
+                    android:background="@drawable/btn_menu" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:background="@drawable/btn_menu" />
+
+                <Button
+                    android:id="@+id/btn_img3"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="+"
+                    android:fontFamily="@font/mbold"
+                    android:textSize="@dimen/_30sdp"
+                    android:background="@drawable/btn_menu" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Foto Thumbnail"
+                android:fontFamily="@font/mreguler"
+                android:textSize="@dimen/_14ssp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgthumb"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:background="@drawable/btn_menu" />
+
+                <Button
+                    android:id="@+id/btn_thumb"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:text="+"
+                    android:fontFamily="@font/mbold"
+                    android:textSize="@dimen/_30sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/btn_menu" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/simpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Simpan"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:fontFamily="@font/mreguler"
+                android:background="@drawable/btn_merah"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

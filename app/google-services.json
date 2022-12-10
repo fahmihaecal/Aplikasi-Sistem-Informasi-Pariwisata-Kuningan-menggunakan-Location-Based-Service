@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "759657018487",
+    "project_id": "kuningan-app",
+    "storage_bucket": "kuningan-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759657018487:android:3a25c03e1a9a0052f88272",
+        "android_client_info": {
+          "package_name": "com.fahmi.ekuningan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "759657018487-rl79h28he94scd2b80k63khgtdg005o1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCol73aJzqVIeAOAJ3AHj4gUemcm-ngeDk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "759657018487-rl79h28he94scd2b80k63khgtdg005o1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

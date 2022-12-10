@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyTour">
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_160sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_9sdp"
+        android:layout_marginTop="@dimen/_130sdp"
+        android:layout_marginEnd="@dimen/_9sdp"
+        android:background="@drawable/btn_menu"
+        android:orientation="vertical"
+        android:outlineAmbientShadowColor="@color/black"
+        android:padding="@dimen/_4sdp"
+        android:paddingTop="@dimen/_6sdp"
+        android:paddingBottom="@dimen/_6sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/header">
+
+        <TextView
+            android:id="@+id/nama_objek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mbold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp" />
+
+        <TextView
+            android:id="@+id/alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mreguler"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tablayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:background="@drawable/btn_menu"
+                    android:foregroundGravity="center"
+                    android:paddingBottom="@dimen/_2sdp"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="@color/hijau_dongo"
+                    app:tabIndicatorHeight="@dimen/_2sdp"
+                    app:tabIndicatorFullWidth="false"
+                    app:tabMode="fixed"
+                    app:tabSelectedTextColor="@color/black" />
+
+            </androidx.viewpager.widget.ViewPager>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/_9sdp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="@dimen/_9sdp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/btn_menu"
+        android:orientation="vertical"
+        android:outlineAmbientShadowColor="@color/black"
+        android:padding="@dimen/_6sdp"
+        android:paddingTop="@dimen/_6sdp"
+        android:paddingBottom="@dimen/_6sdp"
+        android:src="@drawable/btn_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_white"
+            android:paddingTop="@dimen/_6sdp"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+
+    </LinearLayout>
+
+<!--    <Button-->
+<!--        android:id="@+id/rute"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:layout_marginBottom="4dp"-->
+<!--        android:background="@drawable/btn_hijau"-->
+<!--        android:text="Rute"-->
+<!--        android:textColor="@color/white"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

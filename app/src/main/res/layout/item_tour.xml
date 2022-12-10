@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_3sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/foto"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:riv_corner_radius="@dimen/_12sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/nama_objek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Talaga Nilem"
+            android:fontFamily="@font/mbold"
+            android:textSize="@dimen/_8ssp"
+            android:gravity="left"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:textColor="@color/black"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

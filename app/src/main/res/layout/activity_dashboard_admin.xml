@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardAdmin">
+
+    <TextView
+        android:id="@+id/admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:fontFamily="@font/mreguler"
+        android:text="Dashboard Admin"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/btn_admin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/admin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/list"
+            android:text="List Objek Wisata"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/mlight"
+            android:textSize="@dimen/_16ssp"/>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_320sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:layout_marginRight="@dimen/_6sdp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listobjek"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_320sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:layout_marginRight="@dimen/_6sdp"
+                android:background="@drawable/btn_menu"/>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tambahobjek"
+            android:background="@drawable/btn_merah"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_6sdp"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:text="Tambah Objek Wisata"
+            android:textStyle="bold"
+            android:fontFamily="@font/mreguler"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout >

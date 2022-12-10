@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    tools:context=".Menu">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:fontFamily="@font/mreguler"
+        android:text="My Dashboard"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:elevation="@dimen/_10sdp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/pan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner">
+
+        <LinearLayout
+            android:id="@+id/tour"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:background="@drawable/btn_hijau"
+            android:gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="vertical"
+            android:padding="6dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/list" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mreguler"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="List Objek Wisata" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tour_maps"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:background="@drawable/btn_hijau"
+            android:gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="vertical"
+            android:padding="6dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/map" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mreguler"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Maps Objek Wisata" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+        <LinearLayout
+            android:id="@+id/info"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:background="@drawable/btn_hijau"
+            android:gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="vertical"
+            android:onClick="clickFunction"
+            android:padding="6dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/manual" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mreguler"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Info Aplikasi" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/mreguler"
+        android:text="Objek Wisata Terbaru di Kuningan"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recomend"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginRight="@dimen/_12sdp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/textView11" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
